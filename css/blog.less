@@ -1,11 +1,25 @@
 @base-font: "Roboto", sans;
 @base-font-size: 16px;
 @alt-font: "Roboto Condensed", sans;
+@max-width: 700px;
 
+body {
+  font-family: @base-font;
+
+}
+
+.blog--header {
+  border-top: 2px solid #333;
+  font-weight: 100;
+  padding-top: 1em; padding-bottom: 1em;
+  &-inner {
+    max-width: @max-width;
+    margin: 0 auto;
+  }
+}
 
 .post {
-  max-width: 700px;
-  font-family: @base-font;
+  max-width: @max-width;
   font-weight: 100;
   font-size: @base-font-size;
 
@@ -21,6 +35,9 @@
     font-family: @alt-font;
     font-weight:800;
     font-size: 2.8em;
+    &-url {
+      color: inherit;
+    }
   }
   &--meta {
     font-size: .9em;

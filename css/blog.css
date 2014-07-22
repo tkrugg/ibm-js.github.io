@@ -1,6 +1,18 @@
+body {
+  font-family: "Roboto", sans;
+}
+.blog--header {
+  border-top: 2px solid #333;
+  font-weight: 100;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.blog--header-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
 .post {
   max-width: 700px;
-  font-family: "Roboto", sans;
   font-weight: 100;
   font-size: 16px;
   margin: 0 auto;
@@ -15,6 +27,9 @@
   font-family: "Roboto Condensed", sans;
   font-weight: 800;
   font-size: 2.8em;
+}
+.post--title-url {
+  color: inherit;
 }
 .post--meta {
   font-size: .9em;
