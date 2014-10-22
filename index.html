@@ -2,6 +2,9 @@
 layout: index
 ---
 
+<pre> {{site.github | jsonify}} </pre>
+
+
 {% for project in site.data.projects %}
 <a href="{{project.url}}"><div class="box">
 		<div class="title"><span class="project">{{project.name}}</span></div>
